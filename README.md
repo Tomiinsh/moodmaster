@@ -18,4 +18,4 @@ The Music Playlist Generator App is an application designed to provide users wit
 git clone https://github.com/jūsu-lietotājvārds/agro-kultura-repo.git
 
 ## Licences
-Šis projekts ir licencēts ar CC0 1.0 Universal licenci. Lūdzu, lasiet [LICENSE](LICENSE) failu, lai iegūtu sīkāku informāciju.
+This project is licensed under the CC0 1.0 Universal license. Please read the [LICENSE](LICENSE) file for details.

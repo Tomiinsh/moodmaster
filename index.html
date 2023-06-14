@@ -1,1 +1,60 @@
-<h1>Hello world!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Music Generator App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Music Generator App</h1>
+</header>
+
+<main>
+    <form id="music-form">
+        <fieldset>
+            <legend>Genre:</legend>
+            <label for="rock">
+                <input type="checkbox" id="rock" name="genre" value="rock"> Rock
+            </label>
+            <label for="pop">
+                <input type="checkbox" id="pop" name="genre" value="pop"> Pop
+            </label>
+            <label for="hip-hop">
+                <input type="checkbox" id="hip-hop" name="genre" value="hip-hop"> Hip Hop
+            </label>
+            <!-- Add more genre options here -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Mood:</legend>
+            <label for="happy">
+                <input type="checkbox" id="happy" name="mood" value="happy"> Happy
+            </label>
+            <label for="sad">
+                <input type="checkbox" id="sad" name="mood" value="sad"> Sad
+            </label>
+            <label for="chill">
+                <input type="checkbox" id="chill" name="mood" value="chill"> Chill
+            </label>
+            <!-- Add more mood options here -->
+        </fieldset>
+
+        <label for="tempo">Tempo:</label>
+        <input type="number" id="tempo" name="tempo" min="60" max="240" step="5" value="120">
+
+        <a href="playlist.html" class="generator-button">Generate playlist</a>
+    </form>
+
+    <div id="playlist-container">
+        <!-- Playlist results will be displayed here -->
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Music Generator App</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

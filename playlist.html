@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Playlist</title>
+    <style>
+        /* CSS styles inspired by Spotify */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ffffff;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .song-title {
+            color: #ffffff;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .artist {
+            color: #b3b3b3;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        .play-button {
+            width: 30px;
+            height: 30px;
+            background-color: #1db954;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .play-button:hover {
+            background-color: #1ed760;
+        }
+        .play-button-icon {
+            color: #ffffff;
+            font-size: 16px;
+        }
+        #music-player {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #282828;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #music-player .player-controls {
+            display: flex;
+            align-items: center;
+        }
+        #music-player .player-controls .play-pause-button {
+            width: 30px;
+            height: 30px;
+            background-color: #1db954;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        #music-player .player-controls .play-pause-button:hover {
+            background-color: #1ed760;
+        }
+        #music-player .player-controls .play-pause-button-icon {
+            color: #ffffff;
+            font-size: 16px;
+        }
+        #music-player .song-info {
+            margin-left: 20px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<h1>My Playlist</h1>
+<ul>
+    <li>
+        <div class="play-button">
+            <i class="play-button-icon">▶</i>
+        </div>
+        <div>
+            <span class="song-title">Song 1</span>
+            <span class="artist">Artist 1</span>
+        </div>
+    </li>
+    <li>
+        <div class="play-button">
+            <i class="play-button-icon">▶</i>
+        </div>
+        <div>
+            <span class="song-title">Song 2</span>
+            <span class="artist">Artist 2</span>
+        </div>
+    </li>
+    <!-- Add more <li> elements for additional songs -->
+</ul>
+
+<div id="music-player">
+    <div class="player-controls">
+        <div class="play-pause-button">
+            <i class="play-pause-button-icon">▶</i>
+        </div>
+        <div class="song-info">
+            <span class="song-title">Song Title</span>
+            <span class="artist">Artist</span>
+        </div>
+    </div>
+    <div class="progress-bar">
+        <!-- Add your progress bar implementation here -->
+    </div>
+</div>
+</body>
+</html>
